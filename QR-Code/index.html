@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+  </style>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(204, 218, 235);
+    }
+
+    .box {
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      max-width: 380px; /* Adjust the maximum width as needed */
+      max-height: 650px;
+      width: 120%;
+      ;
+    }
+
+    #qr {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 20px; /* Adjust the border radius as desired */
+      overflow: hidden;
+    }
+
+    .box-text {
+      margin-top: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: hsl(218, 44%, 22%)
+    }
+    p {
+      color: hsl(220, 15%, 55%);
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box-container">
+    <div class="box">
+      <img id="qr" src="image-qr-code.png" alt="qr code">
+      <div class="box-text">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </body>
+
